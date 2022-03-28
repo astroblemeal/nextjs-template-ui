@@ -1,0 +1,61 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": " next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "axios": "^0.21.1",
+    "class-transformer": "^0.5.1",
+    "classnames": "^2.2.6",
+    "formik": "^2.2.6",
+    "next": "^10.2.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-query": "^3.13.5",
+    "reflect-metadata": "^0.1.13",
+    "remark": "^12.0.0",
+    "remark-html": "^12.0.0",
+    "tailwind": "^4.0.0",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.13.15",
+    "@types/hoist-non-react-statics": "^3.3.1",
+    "@types/yup": "^0.29.11",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "autoprefixer": "^10.2.5",
+    "es6-shim": "^0.35.6",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.2.2",
+    "postcss": "^8.2.9",
+    "prettier": "^2.1.2",
+    "tailwindcss": "^2.1.1",
+    "typescript": "^4.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
